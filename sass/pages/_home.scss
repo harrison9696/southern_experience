@@ -1,0 +1,30 @@
+body {
+  background-color: $color-black;
+}
+
+// HOME
+.home {
+  
+  &__review-logos {
+      width: 100%;
+
+      img {
+          width: 13rem;
+          padding: 1rem;
+          border: none;
+          background-color: $color-black;
+
+          @media (max-width: 767px) {
+              width: 10rem;
+          }
+          
+          @media (max-width: 623px) {
+              width: 9rem;
+          }
+
+          &:first-child {
+              padding-bottom: 2.6rem;
+          }
+      }
+  }
+}

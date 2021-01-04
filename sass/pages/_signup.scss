@@ -1,0 +1,45 @@
+.signup {
+  padding: 10rem 10rem;
+  background-image: linear-gradient(to right bottom, $color-primary, red);
+
+  @include respond(phone) {
+      padding: 6rem 6rem;
+  }
+
+  @media (max-width: 480px) {
+      padding: 0 0;
+  }
+
+  &__container {
+      background-image: linear-gradient(90deg, rgba($color-black, 0.9) 0%, rgba($color-black, 0.9) 100%), url(../../img/sign-up/sign-up-1.jpg);
+      background-size: cover;
+      border-radius: 3px;
+  }
+
+  &__form-input {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 3rem;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2rem;
+      border: none;
+      background-color: rgba($color-white, .9);
+      border-bottom: 3px solid transparent;
+      transition: all .5s ease;
+
+      @media (max-width: 377px) {
+          font-size: 1.6rem;
+      }
+
+      &:focus {
+          outline: none;
+          border-bottom: 3px solid green;
+      }
+
+      &:focus:invalid {
+          outline: none;
+          border-bottom: 3px solid red;
+      }
+  }
+}

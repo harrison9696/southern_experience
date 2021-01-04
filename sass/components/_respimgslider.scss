@@ -1,0 +1,48 @@
+.home__slide,
+.about__slide,
+.location__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .7s ease-in-out;
+
+    &--current {
+        opacity: 1;
+    }
+}
+
+.home__btns,
+.about__btns,
+.location__btns {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .home__btn,
+    .about__btn,
+    .location__btn {
+        cursor: pointer;
+        background: transparent;
+        font-size: 3rem;
+        border: none;
+        padding: 1rem;
+        color: $color-white;
+        transition: color 1s ease;
+
+        &:hover {
+            color: $color-primary
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
