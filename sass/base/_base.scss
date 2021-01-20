@@ -1,35 +1,35 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 }
 
 html {
-    // This defines 1rem. 1rem = 10px. 10px/16px = 62.5%
-    font-size: 62.5%;
+	// This defines 1rem. 1rem = 10px. 10px/16px = 62.5%
+	font-size: 62.5%;
 
-    @include respond(big-desk) {
-        font-size: 68.75%; // 1rem = 11px
-    }
+	@include respond(big-desk) {
+		font-size: 68.75%; // 1rem = 11px
+	}
 
-    @include respond(tab-land) {
-        font-size: 56.25%; // 1rem = 9px
-    }
+	@include respond(tab-land) {
+		font-size: 56.25%; // 1rem = 9px
+	}
 
-    @include respond(tab-port) {
-        font-size: 50%; // 1rem = 8px
-    }
+	@include respond(tab-port) {
+		font-size: 50%; // 1rem = 8px
+	}
 
-    scroll-padding-top: 4.9rem;
+	scroll-padding-top: 4.9rem;
 }
 
 body {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .container {
-    max-width: 112.5rem;
-    margin: auto;
+	max-width: 112.5rem;
+	margin: auto;
 }

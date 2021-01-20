@@ -1,25 +1,25 @@
 .btn {
-  display: block;
-  padding: 1rem;
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  color: black;
-  cursor: pointer;
-  border: none;
-  transition: all .5s ease;
-  background: rgba($color-white, .9);
+	display: block;
+	padding: 1rem;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+	color: black;
+	cursor: pointer;
+	border: none;
+	transition: all 0.5s ease;
+	background: rgba($color-white, 0.9);
 
-  &:hover {
-      color: $color-white;
-      background-color: $color-primary;
-  }
+	&:hover {
+		color: $color-white;
+		background-color: $color-primary;
+	}
 
-  &:focus {
-      outline: none;
-  }
+	&:focus {
+		outline: none;
+	}
 
-  &:active {
-      background-color: green;
-  }
+	&:active {
+		background-color: green;
+	}
 }
